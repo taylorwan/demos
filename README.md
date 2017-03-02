@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Out of Time
 ### A dating app for the terminally ill
 
@@ -30,3 +31,7 @@ This will launch a local version of the site at localhost:3000. If you don't hav
 ## Versions
 * Node v6.9.1
 * MongoDB v3.2.10
+=======
+# demos
+activism app for fn hackathon spring 2017
+>>>>>>> 988abd318304908bfa07895d18f730fbec6381a9
