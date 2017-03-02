@@ -1,18 +1,19 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+var express      = require('express'),
+    path         = require('path'),
+    favicon      = require('serve-favicon'),
+    logger       = require('morgan'),
+    cookieParser = require('cookie-parser'),
+    bodyParser   = require('body-parser'),
 
-var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk('localhost:27017/outOfTime');
+    mongo = require('mongodb'),
+    monk  = require('monk'),
+    db    = monk('localhost:27017/demos'), // change this accordingly
+    sass  = require('node-sass-middleware'),
 
-var index = require('./routes/index');
-var users = require('./routes/users');
+    index = require('./routes/index'),
+    users = require('./routes/users'),
 
-var app = express();
+    app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -27,11 +28,14 @@ app.use(cookieParser());
 
 // adding the sass middleware
 app.use(
-   sass.middleware({
-       src: __dirname + '/sass', 
-       dest: __dirname + '/public',
-       debug: true,       
-   })
+  sass({
+      /* Options */
+      src: __dirname + '/sass'
+    , dest: __dirname + '/public/stylesheets'
+    , debug: true
+    , outputStyle: 'compressed'
+    , prefix:  '/stylesheets'
+  })
 );
 
 app.use(express.static(path.join(__dirname, 'public')));
