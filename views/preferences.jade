@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  nav
+    div.logo
+      a(href='/') Out of Time
+      img(src='images/icon-w.png')
+    div.top-links
+      a#home(href='/') Home
+      a#about(href='about') About
+      a#browse(href='browse') Browse
+      a#login(href='preferences') Preferences
+      a#logout(href='/') Logout
+
+  section.preferences.container
+    form#preferences(name="questionaire").row
+      section.you.col-md-6.col-sm-6
+        h4 Preferences
+        div.preference-form
+          h5.subtitle Name
+          h5.subtitle Phone
+          h5.subtitle Email
+
+      a.btn.btn-secondary#btnSubmit(href='validation') Submit
+
+      a.btn.btn-primary#btnSubmit(href='browse') Save

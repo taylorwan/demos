@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  nav
+    div.logo
+      a(href='/') Demos
+      img(src='images/icon-w.png')
+    div.top-links
+      a#home(href='/') Home
+      a#about(href='about') About
+      a#login(href='login') Login
+      a#signUp(href='signUp') Sign Up
+
+  div.content-wrap.login
+    h3= title
+    form#formLogin(name="login")
+      input.form-control#inputUserName(type="text", placeholder="Username", name="username")
+      input.form-control#inputPassword(type="password", placeholder="Password", name="password")
+      button.btn.btn-primary#btnSubmit(type="submit") Login

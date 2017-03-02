@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  nav
+    div.logo
+      a(href='/') Out of Time
+      img(src='images/icon-w.png')
+    div.top-links
+      a#home(href='/') Home
+      a#about(href='about') About
+      a#browse(href='browse') Browse
+      a#login(href='preferences') Preferences
+      a#logout(href='/') Logout
+
+  div.content-wrap.browse
+    h1 Matches
+
+    form#filterMatches(name="filterMatches",method="post",action="/filterMatches")
+      span Browse by
+      select.form-control(name = "filterCriteria")
+        option(value="expirationDate") Expiration Date
+        option(value="distance") Distance
+
+    ul.matches
+      each user, i in userlist
+        li.match
+          a(href='user/#{user.username}')
+            div.img-holder
+              img(src='/images/#{user.username}.jpg')
+            div.username #{user.username}
+            div.buckets
+              div.expiration #{user.expiration} months left
+              div.age #{user.age} years old
+              div.distance #{user.distance} miles away

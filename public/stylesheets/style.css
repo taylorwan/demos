@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Salsa');
+
+body {
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+nav {
+  width: 90%;
+  padding: 1em 0;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto 1em;
+  overflow: hidden;
+}
+
+a {
+  color: #00B7FF;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+.content-wrap {
+  width: 90%;
+  margin: 1em auto;
+  overflow: hidden;
+}
+
+nav .logo {
+  float: left;
+}
+
+nav .logo a,
+nav .logo a:hover {
+  font-size: 1.2em;
+  color: #222;
+}
+
+p.small {
+  color: #aaa;
+  font-size: 0.7em;
+}
+
+.top-links {
+  float: right;
+}
+
+.top-links a {
+  padding: 0 1em;
+  font-size: 1.1em;
+}
+
+.splash {
+  font-size: 1.8em;
+  background:url(../images/bg.jpeg) center;
+  background-size: cover;
+  padding: 8em 5em;
+  color: #fff;
+}
+
+#btnSignUp {
+  margin-top: 0.4em;
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+}
+
+.splash .subtitle {
+  position: relative;
+  top: -0.6em;
+}
+
+.logo {
+  font-family: "Salsa";
+}
+
+.logo.main {
+  font-size: 2.5em;
+}
+
+.logo img {
+  height: 1.8em;
+  margin-left: 0.3em;
+}
+
+.btn {
+  border: 0;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background: #00AD93;
+  color: #fff;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+  background: #337ab7;
+  color: #fff;
+}
+
+#formSignUp {
+  text-align: center;
+  padding: 1em;
+  color: #fff;
+  background: #00AD93;
+}
+
+select.form-control {
+  width: auto;
+  display: inline-block;
+  margin: 0.8em;
+  border: 0;
+}
+
+/* splash page */
+section.testimonials {
+  /* margin: 1em 0; */
+}
+
+/* match page */
+ul.matches {
+  padding: 0;
+}
+
+.match {
+  width: 24%;
+  margin: 1em 0.5%;
+  display: inline-block;
+  text-align: center;
+  padding: 1.1em;
+  border: 2px solid rgba(0,0,0,0);
+  border: 2px solid #eee;
+}
+
+.match:hover {
+  border: 2px solid #ccc;
+}
+
+.match a,
+.match:hover a {
+  color: #222;
+  text-decoration: none;
+}
+
+.match .img-holder {
+  max-height: 200px;
+  overflow: hidden;
+  margin-bottom: 0.5em;
+}
+
+div.username {
+  font-weight: 600;
+  color: #00AD93;
+}
+
+.buckets span {
+    margin: 0 0.3em;
+}
+
+/* profile page */
+.profile-left {
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  background-color: white;
+  border: 2px solid #eee;
+  padding: 1em;
+}
+
+.profile-photo {
+  max-height: 200px;
+  max-width: 200px;
+  overflow: hidden;
+  margin-bottom: 0.5em;
+}
+
+.label {
+  color: #00AD93;
+  display: inline-block;
+  text-align: left;
+}
+
+.profile-left .label {
+  min-width: 8em;
+}
+
+.profile-block .title {
+  font-weight: 600;
+  color: #00AD93;
+}
+
+.profile-left .btn {
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+/* about page */
+.content-wrap.about {
+  font-size: 1.2em;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  border-top: 1px solid #ccc;
+  width: 90%;
+  margin: 1em auto 0;
+}
+
+.footer-links a {
+  padding: 0.7em;
+  display: inline-block;
+}
+
+.end-img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* validation */
+.validate .skip {
+  margin: 2em 0 1em;
+}
+
+/* end/messaging page */
+.disappears {
+    z-index: 20;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #fff;
+    animation: fadeOut 4.5s linear;
+    -webkit-animation: fadeOut 4.5s linear;
+    -moz-animation: fadeOut 4.5s linear;
+    -ms-animation: fadeOut 4.5s linear;
+    -o-animation: fadeOut 4.5s linear;
+}
+
+@keyframes fadeOut {
+  0%    { opacity:1; }
+  90%   { opacity:1; }
+  100%  { opacity:0; }
+}
+
+@-webkit-keyframes fadeOut {
+  0%    { opacity:1; }
+  90%   { opacity:1; }
+  100%  { opacity:0; }
+}
+
+@-moz-keyframes fadeOut {
+  0%    { opacity:1; }
+  90%   { opacity:1; }
+  100%  { opacity:0; }
+}
+
+@-ms-keyframes fadeOut {
+  0%    { opacity:1; }
+  90%   { opacity:1; }
+  100%  { opacity:0; }
+}
+
+@-o-keyframes fadeOut {
+  0%    { opacity:1; }
+  90%   { opacity:1; }
+  100%  { opacity:0; }
+}
+
+/* signup + login */
+
+.content-wrap.signup,
+.content-wrap.login {
+  width: 500px;
+  max-width: 100%;
+}
+
+.content-wrap.signup .form-control,
+.content-wrap.login .form-control {
+  margin: 0.5em 0;
+}
+
+/* preferences */
+
+#preferences label {
+  display: block;
+  margin-left: 3px;
+}
+
+.radio {
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.radio .subtitle {
+  color: #00AD93;
+  margin-bottom: 0.4em;
+}

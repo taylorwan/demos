@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  div.splash
+    div.logo.main
+      span= title
+      img(src='images/icon.png')
+    p.subtitle subtitle
+    a.btn.btn-primary#btnSignUp(href='signup') Sign Up Today
+
+  section.callToAction
+    form#formSignUp(name="signup",method="post",action="/changeToBrowse")
+      select.form-control(name = "type")
+        option(value="type1") type1
+        option(value="type2") type2
+      a.btn.btn-secondary#btnSubmit(href='validation') Submit
+
+  section.testimonials.content-wrap.container
+    div.text-center.row
+      h3 Testimonials
+      div.testimonial.col-md-4.col-sm-4
+        p.testimonial "some testimonial or something else" — name
+        p.date
+          span.label date
+          span 02/14/2011
+
+  script.
+    $('.dropdown-toggle').dropdown()
