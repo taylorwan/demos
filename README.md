@@ -13,9 +13,10 @@ git clone https://github.com/taylorwan/demos.git
 For SSH connections, use `git@github.com:taylorwan/demos.git`
 
 #### Install packages
-(make sure you have the correct version of Node installed)
+(make sure you have the correct version of [Node](https://nodejs.org/en/download/) installed)
 ```
 npm install
+npm install mongodb -g
 ```
 #### Run app
 ```
