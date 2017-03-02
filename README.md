@@ -1,20 +1,16 @@
-# Out of Time
-### A dating app for the terminally ill
+# Demos
+### An app for practical activism
 
 Created with Node, Express, and MongoDB
-
-Demo [out-of-time.herokuapp.com](out-of-time.herokuapp.com)
-
-*Not all parts of this project is functional. This project served as a working demo for [Comedy Hack Day DC 2016](http://comedyhackdaydc.com/).*
 
 ## To Run
 This guide assumes you have git, npm, and mongo installed. See versions section below.
 
 #### Clone this repository
 ```
-git clone https://github.com/taylorwan/out-of-time.git
+git clone https://github.com/taylorwan/demos.git
 ```
-For SSH connections, use `git@github.com:taylorwan/out-of-time.git`
+For SSH connections, use `git@github.com:taylorwan/demos.git`
 
 #### Install packages
 (make sure you have the correct version of Node installed)
