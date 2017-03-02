@@ -17,20 +17,10 @@ router.get('/browse', function(req, res) {
 });
 
 router.get('/signup', function(req, res) {
-  res.render('signup', { title: 'Sign Up' });
+  res.render('signform', { title: 'Sign Up' });
 });
 
-router.get('/login', function(req, res) {
-  res.render('login', { title: 'Log In' });
-});
 
-router.get('/about', function(req, res) {
-  res.render('about', { title: 'About' });
-});
-
-router.get('/preferences', function(req, res) {
-  res.render('preferences', { title: 'Set Preferences' });
-});
 
 /* GET New User page. */
 // router.get('/user/:username', function(req, res) {

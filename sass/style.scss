@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300i,400|Raleway:200,300,400,600');
+
+//font variables
+$font-stack-heading: 'Raleway', sans-serif;
+$font-stack-text: 'Lato', sans-serif;
+
+//box-model variables
+$padding: 1%;
+
+//colors
+$demos_blue: #1C5EFF;
+$demos_sea: #5CCDFF;
+$black: #333;
+
+//Fonts and Colors
+
+body {
+  color: $black;
+}
+
+h1, h2, h3 {
+  font-family: $font-stack-heading;
+}
+
+h1 {
+  color: $demos_blue;
+  font-weight: 600;
+  margin-bottom: 0;
+  display: inline;
+  position: relative;
+  top: 11px;
+  right: 7px;
+  
+}
+
+h2 {
+  color: $demos_sea;
+  font-weight: 200;
+  font-size: 24px;
+  margin-top: 5px;
+  
+}
+
+.blast {
+  font-size: 72px;
+  color: $demos_sea;
+  font-weight: 600;
+}
+
+p, label {
+  font-family: $font-stack-text;
+  font-size: 20px;
+}
+
+//header styles
+img.logo {
+  display: inline;
+  height: 45px;
+  width: 50px;
+  margin-left: -10px;
+}
+
+//form styles
+.form-box {
+  padding: $padding;
+}
+
+//Button Styles
+.btn {
+  background-color: $demos_blue;
+  color: white;
+  font-size: 20px;
+  font-family: $font-stack-heading;
+}
+
+.index-button {
+  width: 250px;
+  height: 50px;
+}
+
+.btn:hover {
+  background-color: $demos_sea;
+  color: white;
+  font-family: $font-stack-heading;
+  font-size: 20px;
+}
+
+//front-page
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.message {
+  margin-bottom: 100px;
+}
+
+.main_content {
+  margin-bottom: 50px;
+}
+
+.signup {
+  clear: both;
+  margin-top: 25px;
+  text-align:center;
+  margin-bottom: 125px;
+
+}
+
+.pitch {
+  font-family: $font-stack-text;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 24px;
+  color: #ccc;
+}
+
+// footer
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
