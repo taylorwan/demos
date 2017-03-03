@@ -11,9 +11,10 @@ html
     div.container-fluid
       div.header
         div.logo_splash
-          img(src='images/demos.png').img-responsive.logo
-          h1 DEMOS
-          h2 People-Powered Movements
+          a(href='/')
+            img(src='images/demos.png').img-responsive.logo
+            h1 DEMOS
+            h2 People-Powered Movements
         
         div.navigation
           ul.nav.nav-pills
@@ -31,7 +32,9 @@ html
       block content
       footer.col-md-12
         div.footer-links
-          a(href='/about') About
+          a(href='/') About
+          a(href='/') Product
+          a(href='/') Contact
         © Demos 2017
 
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')

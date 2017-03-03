@@ -10,10 +10,11 @@ html
   body(class="#{bodyClass}", ng-app='demos', ng-controller='demosController')
     div.container-fluid
       div.header
-        div.logo_splash
-          img(src='images/demos.png').img-responsive.logo
-          h1 DEMOS
-          h2 People-Powered Movements
+        a(href='/')
+          div.logo_splash
+            img(src='images/demos.png').img-responsive.logo
+            h1 DEMOS
+            h2 People-Powered Movements
         
         div.navigation
           ul.nav.nav-pills

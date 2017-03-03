@@ -65,6 +65,10 @@ p, label {
 
 .logo_splash {
   float: left;
+
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 //nav 
@@ -191,6 +195,7 @@ img.logo {
 footer {
   text-align: center;
   margin-top: 50px;
+  padding: 20px;
 
   .footer-links a {
     margin: 0 5px;
