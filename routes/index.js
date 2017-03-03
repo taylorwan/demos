@@ -42,16 +42,10 @@ router.get('/create-list', function(req, res, next) {
   res.render('index', { title: 'Create List' });
 });
 
-
-router.get('/browse', function(req, res) {
-  var db = req.db;
-  var collection = db.get('usercollection');
-  collection.find({},{},function(e,docs){
-    res.render('userlist', {
-      "userlist" : docs
-    });
-  });
+router.get('/bills', function(req, res, next) {
+  res.render('bills', { title: 'Bill List' });
 });
+
 
 router.get('/signup', function(req, res) {
   res.render('signform', { title: 'Sign Up' , bodyClass: 'sign_up'});

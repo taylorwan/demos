@@ -207,3 +207,25 @@ textarea {
 .create-button {
   float: right;
 }
+
+//browse page
+.create_list {
+  text-align: left;
+}
+.list_button {
+  font-size: 16px;
+  padding: 5px 5px;
+}
+
+//bill page
+.bill_button {
+  padding: 5px 5px;
+  background-color: $demos-blue;
+  color: white;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.billcard {
+  margin: 5px 0px;
+}

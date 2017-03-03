@@ -2,8 +2,9 @@ extends layout-2
 block content
   div
     h3 Your lists
-      a.create-btn.btn.btn-primary(href='/create-campaign')
-        button.btn(type="button") Create List
-
+    div.create_list
+        a.create-btn.btn.btn-primary.list_button(href='/create-campaign')
+            button.btn.list_button(type="button") Create List
+    
     div(ng-repeat='lists as list')
       {{list.name}}
