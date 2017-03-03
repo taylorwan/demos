@@ -63,12 +63,15 @@ p, label {
 
 }
 
+.logo_splash {
+  float: left;
+}
 
 //nav 
 .navigation {
   float: left;
+  margin-left: 20px;
   margin-top: 25px;
-  margin-left: -50px;
 }
 
 .navigation li a {
@@ -117,7 +120,7 @@ img.logo {
   background-color: $demos_sea;
   color: white;
   font-family: $font-stack-heading;
-  font-size: 20px;
+  // font-size: 20px;
 }
 
 .signup {
@@ -141,6 +144,7 @@ img.logo {
 
 .top_signup {
   text-align:right;
+  float: right;
 }
 
 .signup_button {
@@ -173,6 +177,9 @@ img.logo {
   font-size: 36px;
 }
 
+.container-fluid {
+  max-width: 1200px;
+}
 //quote
 // .testimonial {
 //   margin-top: 100px;
@@ -197,3 +204,6 @@ textarea {
   resize: none;
 }
 
+.create-button {
+  float: right;
+}

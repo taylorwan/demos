@@ -32,6 +32,17 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Demos' });
 });
 
+/* GET home page. */
+router.get('/browse', function(req, res, next) {
+  res.render('browse', { title: 'Your Lists' });
+});
+
+/* GET home page. */
+router.get('/create-list', function(req, res, next) {
+  res.render('index', { title: 'Create List' });
+});
+
+
 router.get('/browse', function(req, res) {
   var db = req.db;
   var collection = db.get('usercollection');

@@ -6,6 +6,12 @@ app.controller('demosController', [
 
 function($scope, $http){
   $scope.test = 'Hello world!';
+  $scope.lists = [];
+  $scope.listLength = $scope.lists.length;
+
+  $scope.addList = function() {
+    $scope.lists.push({name: $scope.listname})
+  }
 
   $scope.sendCampaign = function() {
     console.log('in sendCampaign')

@@ -1,21 +1,21 @@
 extends layout
 block content
-	div.row
-		div.col-md-6.col-md-offset-3.form-box
-		
-			h3 Join Demos Today. 
+  div.row
+    div.col-md-6.col-md-offset-3.form-box
+    
+      h3 Join Demos Today. 
 
-			form
-				div.form-group
-					label Name
-					input(type="text", placeholder="e.g. John Zoshak").form-control
+      form
+        div.form-group
+          label Name
+          input(type="text", placeholder="e.g. John Zoshak").form-control
 
-				div.form-group
-					label Email Address
-					input(type="email", placeholder="yourname@example.com").form-control
+        div.form-group
+          label Email Address
+          input(type="email", placeholder="yourname@example.com").form-control
 
-				div.form-group
-					label Phone Number
-					input(type="tel", placeholder="555-555-5555").form-control
-
-				button.btn(type="button") Take Action!
+        div.form-group
+          label Phone Number
+          input(type="tel", placeholder="555-555-5555").form-control
+        a(href='/browse')
+          button.btn(type="button") Take Action!
