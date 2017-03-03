@@ -1,5 +1,31 @@
-var express = require('express');
-var router = express.Router();
+var express = require('express'),
+    router  = express.Router(),
+    app     = express(),
+    locreq  = require('locreq')(__dirname),
+    config  = locreq('config/config'),
+    client  = require('twilio')(config['accountSid'], config['authToken']); ;
+
+app.post('/send-text',function(res,req){
+  console.log(req.params.msg);
+  // client.messages.create({
+  //     to: "+12125744453", 
+  //     from: "+16467626189", w
+  //     body: req.params.msg,
+  //   }, function(err, message) { 
+  //     if (err) {
+  //       res.render('create-campaign', {
+  //         err: err,
+  //         params: req.params
+  //       });
+  //     }
+  //     res.render('create-campaign', {
+  //       message: message,
+  //       params: req.params
+  //     });
+  //     console.log('Successfully sent', req.params.name, 'to', req.params.list);
+  //     console.log(message.sid);
+  //   });
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -20,6 +46,10 @@ router.get('/signup', function(req, res) {
   res.render('signform', { title: 'Sign Up' , bodyClass: 'sign_up'});
 });
 
+
+router.get('/create-campaign', function(req, res) {
+  res.render('create-campaign', { title: 'Create A Campaign' });
+});
 
 
 /* GET New User page. */

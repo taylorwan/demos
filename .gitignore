@@ -1,2 +1,7 @@
 data/*
 node_modules/*
+
+npm-debug.log
+
+config/*
+!config/config.json.default

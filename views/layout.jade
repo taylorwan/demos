@@ -4,10 +4,10 @@ html
     title= title
     link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel="stylesheet", href="/stylesheets/app.css")
     link(rel='shortcut icon',href='/images/favicon.png',type='image/x-icon')
+
   block vars
-  body(class="#{bodyClass}")
+  body(class="#{bodyClass}", ng-app='demos', ng-controller='demosController')
     div.container-fluid
       div.header
         div.logo_splash.col-md-4
@@ -36,3 +36,4 @@ html
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
     script(type='text/javascript', src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js') 
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js')
+    script(type='text/javascript', src='/js/app.js')
