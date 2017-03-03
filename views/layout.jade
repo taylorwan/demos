@@ -20,17 +20,20 @@ html
             li 
               a(href="/") About us
             li 
-              a Product
+              a(href="/") Product
             li 
-              a Contact
+              a(href="/") Contact
 
         div.top_signup
-          button.btn.signup_button(type="button") Sign Up
+          a(href='signup')
+            button.btn.signup_button(type="button") Sign Up
       
       block content
       footer.col-md-12
         div.footer-links
-          a(href='/about') About
+          a(href='/') About
+          a(href='/') Product
+          a(href='/') Contact
         © Demos 2017
 
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')

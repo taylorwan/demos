@@ -2,10 +2,11 @@ extends layout-2
 block content
   div
     h3 Your lists
-      a.create-btn.btn.btn-primary(href='/create-campaign')
-        button.btn(type="button") Create List
+        div.create_list
+          a.create-btn.btn.btn-primary(href='/create-list')
+            button.btn(type="button") Create List
 
     div.cards
       a(href='/friends')
         div.card
-          DC Friends
+          span DC Friends

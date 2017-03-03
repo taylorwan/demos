@@ -191,6 +191,10 @@ img.logo {
 footer {
   text-align: center;
   margin-top: 50px;
+
+  .footer-links a {
+    margin: 0 5px;
+  }
 }
 
 /* campaign page */
@@ -211,6 +215,12 @@ textarea {
 //browse page
 .create_list {
   text-align: left;
+  float: right;
+
+  .btn {
+    padding: 5px;
+    font-size: 16px;
+  }
 }
 
 .list_button {
@@ -229,6 +239,7 @@ textarea {
 
 .billcard {
   margin: 5px 0px;
+}
 
 // card stuff
 .card {
