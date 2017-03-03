@@ -1,5 +1,6 @@
 extends layout 
-
+block vars
+	- var bodyClass='include_background'
 block content
 
 	section.wrap.message
@@ -24,10 +25,11 @@ block content
 				p Text/Email your lists to create a sustained force for change. 
 
 	section.wrap.signup
-		button.btn.index-button(type="button") Take Action Today
+		a(href="/signup")
+			button.btn.index-button(type="button") Take Action Today
 
-	section.wrap.testimonial
-		p.quote "I used DEMOS to mobilize over 50 of my friends to call our state senator to make sure she voted yes on a bill we cared about." - Vanessa in VA
+
+
 
 
 

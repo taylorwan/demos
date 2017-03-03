@@ -6,12 +6,26 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel="stylesheet", href="/stylesheets/app.css")
     link(rel='shortcut icon',href='/images/favicon.png',type='image/x-icon')
-  body
+  block vars
+  body(class="#{bodyClass}")
     div.container-fluid
-      div.page-header
-        img(src='images/demos.png').img-responsive.logo
-        h1 DEMOS
-        h2 People-Powered Movements
+      div.header
+        div.logo_splash.col-md-4
+          img(src='images/demos.png').img-responsive.logo
+          h1 DEMOS
+          h2 People-Powered Movements
+        
+        div.navigation.col-md-4
+          ul.nav.nav-pills
+            li 
+              a About us
+            li 
+              a Product
+            li 
+              a Contact
+
+        div.top_signup.col-md-4
+          button.btn.signup_button(type="button") Sign Up
       
       block content
       footer.col-md-12

@@ -17,7 +17,7 @@ router.get('/browse', function(req, res) {
 });
 
 router.get('/signup', function(req, res) {
-  res.render('signform', { title: 'Sign Up' });
+  res.render('signform', { title: 'Sign Up' , bodyClass: 'sign_up'});
 });
 
 
