@@ -228,4 +228,22 @@ textarea {
 
 .billcard {
   margin: 5px 0px;
+
+.card {
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  padding: 1em;
+  font-size: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: $demos_sea;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #ddd;
+}
+
+.numbers p {
+  font-size: 16px;
 }

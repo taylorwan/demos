@@ -1,18 +1,20 @@
 extends layout-2
 
 block content
-  form.create-campaign-form(ng-submit='sendCampaign()')
-    h3= title
-    div.form-group.campaign-name
-      label Campaign Name:
-      div
-        input.form-control(type='text', ng-model='name')
-    div.form-group.campaign-list
-      label(for='list') Send to:
-      select.form-control(name="sendTo", ng-model='list')
-        option(value="list1") list1
-        option(value="list2") list2
-    div.form-group.campaign-message
-      label(for='message') Your Message:
-      textarea.form-control#your-message(ng-model='message', rows=2)
-    button.btn.btn-default(type="submit") Send
+  .create-campaign-form
+    form(ng-submit='sendCampaign()')
+      h3= title
+      div.form-group.campaign-name
+        label Campaign Name:
+        div
+          input.form-control(type='text', ng-model='name')
+      div.form-group.campaign-list
+        label(for='list') Send to:
+        select.form-control(name="sendTo", ng-model='list')
+          option(value="list1") DC Friends
+          option(value="list2") Co-Workers
+      div.form-group.campaign-message
+        label(for='message') Your Message:
+        textarea.form-control#your-message(ng-model='message', rows=2)
+    a(href='campaign-sent')
+      button.btn.btn-default Send

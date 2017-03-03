@@ -17,15 +17,14 @@ html
         
         div.navigation
           ul.nav.nav-pills
-            li 
-              a About us
-            li 
-              a Product
-            li 
-              a Contact
+            li
+              a(href='/bills') Your Bills
+            li
+              a(href='/list') Your Lists
 
         div.top_signup
-          button.btn.signup_button(type="button") Account
+          a(href='/list')
+            button.btn.signup_button(type="button") Browse
       
       block content
       footer.col-md-12

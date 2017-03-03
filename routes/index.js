@@ -7,24 +7,24 @@ var express = require('express'),
 
 app.post('/send-text',function(res,req){
   console.log(req.params.msg);
-  // client.messages.create({
-  //     to: "+12125744453", 
-  //     from: "+16467626189", w
-  //     body: req.params.msg,
-  //   }, function(err, message) { 
-  //     if (err) {
-  //       res.render('create-campaign', {
-  //         err: err,
-  //         params: req.params
-  //       });
-  //     }
-  //     res.render('create-campaign', {
-  //       message: message,
-  //       params: req.params
-  //     });
-  //     console.log('Successfully sent', req.params.name, 'to', req.params.list);
-  //     console.log(message.sid);
-  //   });
+  client.messages.create({
+      to: "+12125744453",
+      from: "+16467626189",
+      body: req.params.msg,
+    }, function(err, message) { 
+      if (err) {
+        res.render('campaign-sent', {
+          err: err,
+          params: req.params
+        });
+      }
+      res.render('campaign-sent', {
+        message: message,
+        params: req.params
+      });
+      console.log('Successfully sent', req.params.name, 'to', req.params.list);
+      console.log(message.sid);
+    });
 });
 
 /* GET home page. */
@@ -38,8 +38,18 @@ router.get('/browse', function(req, res, next) {
 });
 
 /* GET home page. */
+router.get('/list', function(req, res, next) {
+  res.render('list', { title: 'Your Lists' });
+});
+
+/* GET home page. */
 router.get('/create-list', function(req, res, next) {
-  res.render('index', { title: 'Create List' });
+  res.render('create-list', { title: 'Create List' });
+});
+
+/* GET home page. */
+router.get('/friends', function(req, res, next) {
+  res.render('friends', { title: 'List - DC Friends' });
 });
 
 router.get('/bills', function(req, res, next) {
@@ -54,6 +64,10 @@ router.get('/signup', function(req, res) {
 
 router.get('/create-campaign', function(req, res) {
   res.render('create-campaign', { title: 'Create A Campaign' });
+});
+
+router.get('/campaign-sent', function(req, res) {
+  res.render('campaign-sent', { title: 'Campaign Sent!' });
 });
 
 
